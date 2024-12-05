@@ -4,9 +4,8 @@
     {
         public static void Main(string[] args)
         {
-            cosnt string Msg = "Introdueix els 20 numeros per separat: ";
+            const string Msg = "Introdueix els 20 numeros per separat: ";
             const string DemanarNum = "Introdueix un nombre: ";
-            const string 
             int[] arrs = new int[20];
             int num = 0;
 
@@ -23,9 +22,9 @@
                 Console.Write($"{arrs[i]} ");
             }
 
-            Console.WriteLine(DemanarNum);
+            /* Console.WriteLine(DemanarNum);
             num = Int16.Parse(Console.ReadLine());
-            Console.WriteLine(isNumberList(arrs, num);
+            Console.WriteLine(isNumberList(arrs, num);*/
         }
         public static void BubbleSort(int[] arrs)
         {
