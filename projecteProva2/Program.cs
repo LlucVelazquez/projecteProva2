@@ -21,10 +21,10 @@
             {
                 Console.Write($"{arrs[i]} ");
             }
-
-            /* Console.WriteLine(DemanarNum);
+            Console.WriteLine("\n");
+            Console.WriteLine(DemanarNum);
             num = Int16.Parse(Console.ReadLine());
-            Console.WriteLine(isNumberList(arrs, num);*/
+            isNumberList(arrs, num);
         }
         public static void BubbleSort(int[] arrs)
         {
@@ -41,13 +41,18 @@
                 }
             }
         }
-        public static bool isNumberList(int[] arrs, int num)
+        public static void isNumberList(int[] arrs, int num)
         {
+            const string IsInList = "El Numero esta en la llista";
+            
             for ( int i = 0; i < arrs.Length; i++)
             {
-                if (num == arrs[i]) return true;
+                if (num == arrs[i])
+                {
+                    Console.WriteLine(IsInList);
+                }
             }
-            return false;
+            
         }
     }
 }
