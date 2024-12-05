@@ -1,1 +1,2 @@
-# projecteProva2
+# projecteProva2 Lluc Velazquez
+
