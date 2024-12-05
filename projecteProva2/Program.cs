@@ -11,19 +11,14 @@
             int mes = 0;
             int any = 0;
 
-
-            Console.WriteLine(MsgErrorDia);
-            dia = Int16.Parse(Console.ReadLine());
-            Console.WriteLine(MsgErrorMes);
-            mes = Int16.Parse(Console.ReadLine());
-            Console.WriteLine(MsgErrorAny);
-            any = Int16.Parse(Console.ReadLine());
             DiaCorrecte(dia);
             MesCorrecte(mes);
             AnyCorrecte(any);
         }
         public static void DiaCorrecte(int dia)
         {
+            Console.WriteLine(MsgErrorDia);
+            dia = Int16.Parse(Console.ReadLine());
             while (dia < 1 || dia > 31)
             {
                 Console.WriteLine(MsgErrorDia);
@@ -32,6 +27,8 @@
         }
         public static void MesCorrecte(int mes)
         {
+            Console.WriteLine(MsgErrorMes);
+            mes = Int16.Parse(Console.ReadLine());
             while (mes < 1 || mes > 12)
             {
                 Console.WriteLine(MsgErrorMes);
@@ -40,6 +37,8 @@
         }
         public static void AnyCorrecte(int any)
         {
+            Console.WriteLine(MsgErrorAny);
+            any = Int16.Parse(Console.ReadLine());
             while ((any % 400 == 0) || ((any % 4 == 0) && (any % 100 != 0)))
             {
                 Console.WriteLine(MsgErrorAny);
