@@ -9,7 +9,7 @@ namespace projecteProva2
             int num = 0;
             num = Int16.Parse(Console.ReadLine());
             int[] ints = { 10, 4, 6, 4, 8, -13, 2, 3 };
-            FirstSort.Order(ints,num );
+            SearchClass.;
         }
     }
 }
