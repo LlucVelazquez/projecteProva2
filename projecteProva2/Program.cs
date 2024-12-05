@@ -1,10 +1,15 @@
-﻿namespace projecteProva2
+﻿using Prova;
+
+namespace projecteProva2
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            int num = 0;
+            num = Int16.Parse(Console.ReadLine());
+            int[] ints = { 10, 4, 6, 4, 8, -13, 2, 3 };
+            FirstSort.Order(ints,num );
         }
     }
 }
